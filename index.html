@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<title> Newton's Cradle </title>
+	<script src="./libraries/three.min.js"></script>
+	<script src="./libraries/jquery-1.6.4.js"></script>
+	<script src="./libraries/TrackballControls.js"></script>
+	<script src="./libraries/physi.js"></script>
+	<script src="./InteractiveNewtonsCradle.js"></script>
+	
+	<script>
+		//-----------------------------------------------------//
+		//----Create Instance of Newtons Cradle Application----//
+		//-----------------------------------------------------//
+		
+		$(document).ready(
+			function() {
+				var NewtonsCradleDiv = document.getElementById("NewtonsCradleDiv");
+				updateClicked();
+			}
+		);
+		
+		function updateClicked() {
+			var input = prompt("Enter the number of spheres for the Newtons Cradle");
+			if (!isNaN(input)) {
+				numberOfSpheres = input;
+			}
+			init();
+		}
+	</script>
+</head>
+
+<body>
+	<div id="wrapper" style="width:100%; height:100%;">
+		<div id="NewtonsCradleDiv" style="position:absolute; width:100%; height:100%; margin:auto; overflow:hidden; background-color:green;"></div>
+	</div>
+</body>
+
+</html>
