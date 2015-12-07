@@ -1,4 +1,4 @@
 # newton
 An Interactive Newton's Cradle with Three.js
 
-![alt tag](https://raw.github.com/ianvkoeppe/newton/images/screenshot.png)
+![alt tag](https://raw.githubusercontent.com/ianvkoeppe/newton/master/images/screenshot.png)
